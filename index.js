@@ -13,13 +13,9 @@ const mondayWork = function(activity = "go to the office") {
    - Takes a single parameter that defaults to "special"
    - Return a string. "You are *a param programmer*!"
 */
-
 function wrapAdjective(str = "*") {
-  let inner = (param = "special") => {
+  let message = (param = "special") => {
     return `You are ${str}${param}${str}!`
   }
-  return inner;
+  return message;
 }
-
-
-console.log(wrapAdjective("%")("a dedicated programmer"));
